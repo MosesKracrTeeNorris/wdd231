@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the WDD 231 Course Home Page for Moses Kracar-Tee Norris. The Home Page is about me and the Web Development course certificate outline.">
+    <meta name="author" content="Moses Kracar-Tee Norris">
+    <title>Home | Moses Kracar-Tee Norris</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <meta property="og:title" content="Home | Moses Kracar-Tee Norris">
+    <meta property="og:description" content="WDD 231 Course Home Page and self-introduction of Moses Kracar-Tee Norris. Outline of the Web Development certification course.">
+    <meta property="og:image" content="https://moseskracrteenorris.github.io/wdd231/images/norris-pic.jpg">
+    <meta property="og:url" content="https://moseskracrteenorris.github.io/wdd231/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Moses Kracar-Tee Norris">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home | Moses Kracar-Tee Norris">
+    <meta name="twitter:description" content="WDD 231 Course Home Page and self-introduction of Moses Kracar-Tee Norris. Outline of the Web Development certification course.">
+    <!-- <meta name="twitter:image" content="/project/images/my-pic.jpg"> -->
+    <!-- <meta name="twitter:site" content=""> -->
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/home.svg" alt="Site Logo Placeholder" class="logo"> 
+            <span class="site-name">Moses Kracar-Tee Norris</span>
+        </div>
+        
+        <button id="menu-toggle" aria-expanded="false" aria-label="Toggle Navigation">☰</button>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html" target="_blank">Chamber Project</a></li>
+            <li><a href="finalproject/index.html" target="_blank">Final Project</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1> 
+
+        <div class="top-row-flex">
+            <!-- About Me Section -->
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <p>
+                Good day friends. My name is <strong>Moses Kracar-Tee Norris</strong>. I am a from Monrovia Liberia, West Africa. I am a student of BYU Idaho. I am pursuing a degree in Business Administration. 
+                I have chosen Web Development and Computer programming as my first certificate program. 
+                </p>
+            </section>
+
+            <!-- Student Photo Section -->
+            <section class="card student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/norris-pic.jpg" alt="Student Photo" loading="lazy">
+            </section>
+        </div>
+        
+        <!-- Section of Web Certificate Courses -->
+        <section class="card courses-section">
+            <h2>Web and Computer Programming Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="filter-all" class="active">All Courses</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+                
+            </div>
+            
+            <div class="course-list-container">
+            </div>
+            
+            <p class="credit-total">The total credits for courses listed above is <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- SOCIAL MEDIA ICONS -->
+            <a href="https://github.com/moseskracrteenorris" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="github" width="20" height="20"></a>
+            <a href="https://https://www.linkedin.com/in/moses-k-t-norris-a22787139/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="linkedin" width="20" height="20"></a>
+            <a href="https://www.facebook.com/moseskracarteenorris" target="_blank" aria-label="Facebook"><img src="images/facebook.svg" alt="facebook" width="20" height="20"></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter-x.svg" alt="twitter" width="20" height="20"></a>
+            <a href="https://wa.me/231880165653" target="_blank" aria-label="WhatsApp"><img src="images/whatsapp.svg" alt="whatsapp" width="20" height="20"></a>
+        </div>
+
+        <p>
+            &copy; <span id="currentYear"></span> | Moses Kracar-Tee Norris | Monrovia, Liberia
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+</html>
