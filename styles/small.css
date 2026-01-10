@@ -5,13 +5,13 @@
     --accent-color: #3498db;
     --accent-compliant-color: #2970a6;
     --completed-color-compliant: #415A77;
-    --completed-color: #27ae60;
+    --completed-color: #fa8d07fb;
     --text-light: #ecf0f1;
     --text-dark: #2c3e50;
     --bg-light: #f8f9fa;
     --bg-card: #ffffff;
     --border-color: #bdc3c7;
-    --hover-color: #1abc9c;
+    --hover-color: #ffa500;
 
     /* Centralized accessible color tokens */
     --accent-high-contrast: #003366;

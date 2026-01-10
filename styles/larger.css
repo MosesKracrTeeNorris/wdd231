@@ -70,9 +70,9 @@
         border-bottom: 3px solid var(--accent-compliant-color);
     }
 
-    /* ==========================================
+    /* ===========================
        CRITICAL FIX: EQUAL HEIGHTS WITH FLEXBOX
-       ========================================== */
+       ============================ */
     .top-row-flex {
         display: flex;
         align-items: stretch; 

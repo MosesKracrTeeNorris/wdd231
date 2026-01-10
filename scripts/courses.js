@@ -131,7 +131,7 @@ function showCourseDetails(course) {
 }
 
 
-// --- COURSE CARD GENERATION AND LOGIC ---
+// COURSE CARD GENERATION AND LOGIC 
 
 // Function to display courses
 function displayCourses(coursesToDisplay) {
