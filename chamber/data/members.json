@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Passcode Netmask Iteration Leets",
+        "tagline": "Teaching Excellent Computer Skills, and Providing Information Technology Services to All.",
+        "address": "3rd Street Sinkor, Monrovia, Montserrado County",
+        "phone": "+231880165653",
+        "email": "info@passcodenetmaskiterationleets.com",
+        "website": "https://www.passcodenetmaskiterationleets.com",
+        "image": "images/peniel-logo.webp",
+        "membershipLevel": 1,
+        "industry": "Information Technology",
+        "yearJoined": 2020
+    },
+    {
+        "name": "Smart Brothers Construction Inc.",
+        "tagline": "Building Your Dream Home is Our Priority",
+        "address": "SKD Boulevard Road, Monrovia, Montserrado County",
+        "phone": "+231779646600",
+        "email": "info@smbc.com",
+        "website": "https://www.smbc.com",
+        "image": "images/smbc-logo.png",
+        "membershipLevel": 1,
+        "industry": "Constuction",
+        "yearJoined": 2021
+    },
+    {
+        "name": "M&N Tech Solutions",
+        "tagline": "Innovating Tomorrow, Today",
+        "address": "12 Innovation Drive, Warri, Delta State",
+        "phone": "+234 807 890 1234",
+        "email": "hello@deltatechsolutions.ng",
+        "website": "https://www.deltatechsolutions.ng",
+        "image": "images/dtsc-team.webp",
+        "membershipLevel": 2,
+        "industry": "Technology",
+        "yearJoined": 2021
+    },
+    {
+        "name": "International Bank Liberia Limited",
+        "tagline": "Trust & Reliability",
+        "address": "12th Street Sinkor, Monrovia, Montserrado County",
+        "phone": "+231777777222",
+        "email": "info@ibliberia.com",
+        "website": "https://www.ibliberia.com",
+        "image": "images/fibank-logo2.jpg",
+        "membershipLevel": 3,
+        "industry": "Finance",
+        "yearJoined": 2000
+    },
+    {
+        "name": "Liberian Bank for Development and Investment",
+        "tagline": "Liberia's only development finance institution",
+        "address": "9th Street Sinkor, Monrovia, Liberia",
+        "phone": "+231888999545",
+        "email": "customers.inquiries@lbdi.net",
+        "website": "https://www.lbdi.net",
+        "image": "images/ldbi-logo.png",
+        "membershipLevel": 3,
+        "industry": "Development Finance Institution",
+        "yearJoined": 1988
+    },
+    {
+        "name": "The Farmington Hotel Liberia",
+        "tagline": "Fine Dining and Luxury in Liberia",
+        "address": "Robert International Airport, Harbel, Margibi County",
+        "phone": "+231888888999",
+        "email": "info@thefarmingtonhotel.com",
+        "website": "https://www.thefarmingtonhotel.com",
+        "image": "images/farmington.png",
+        "membershipLevel": 3,
+        "industry": "Hospitality",
+        "yearJoined": 2017
+    },
+    {
+        "name": "The Royal Grand Hotel",
+        "tagline": "Making your stay comfortable and memorable",
+        "address": "15th Street Sinkor, Monrovia, Montserrado County",
+        "phone": "+231555777888",
+        "email": "info@theroyalgrandhotel.com",
+        "website": "https://www.theroyalgrandhotel.com",
+        "image": "images/royalhotel.jpg",
+        "membershipLevel": 2,
+        "industry": "Hospitality",
+        "yearJoined": 2012
+    },
+    {
+        "name": "Sethi Brothers Inc.",
+        "tagline": "Quality Building Materials",
+        "address": "Jamaica Road Bushrod Island, Monrovia, Montserrado County",
+        "phone": "+231776915347",
+        "email": "ashish@sethi-lib.com",
+        "website": "https://www.sethi-lib.com",
+        "image": "images/sethi.jpg",
+        "membershipLevel": 3,
+        "industry": "Building Materials",
+        "yearJoined": 2009
+    },
+    {
+        "name": "BMC Group",
+        "tagline": "Your key to the futures",
+        "address": "Capitol Bye-Pass, Monrovia, Montserrado County",
+        "phone": "+231880676767",
+        "email": "info@bmcgroup.com.lr",
+        "website": "https://www.bmcgroup.com.lr",
+        "image": "images/bmc.jpg",
+        "membershipLevel": 3,
+        "industry": "Construction Company",
+        "yearJoined": 2007
+    }
+]
