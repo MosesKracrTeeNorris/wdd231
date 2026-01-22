@@ -6,23 +6,30 @@ const byuiCourse = {
     {
       sectionNum: 1,
       roomNum: "CRM 214",
-      enrolled: 16,
+      enrolled: 0,
       days: "TUE",
       instructor: "Sis. Tarr",
     },
     {
       sectionNum: 2,
       roomNum: "CRM 232",
-      enrolled: 29,
+      enrolled: 0,
       days: "TTh",
       instructor: "Bro. Maxwell",
     },
     {
       sectionNum: 3,
       roomNum: "CRM 133",
-      enrolled: 20,
+      enrolled: 0,
       days: "MWF",
       instructor: "Sis. Nova",
+    },
+    {
+      sectionNum: 4,
+      roomNum: "CRM 428",
+      enrolled: 0,
+      days: "SAT",
+      instructor: "Bro. Modaris",
     },
     
   ],

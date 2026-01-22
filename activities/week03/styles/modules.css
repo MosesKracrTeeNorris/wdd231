@@ -18,13 +18,14 @@ main {
 }
 
 h1, h2, h3 {
-    color: #0056b3; 
+    color: #0056b3;
+    justify-content: center; 
 }
 
 /* --- Enrollment Controls Section --- */
 #enrollment-controls {
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: orange;
