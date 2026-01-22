@@ -19,7 +19,7 @@ main {
 
 h1, h2, h3 {
     color: #0056b3;
-    justify-content: center; 
+    text-align: center;
 }
 
 /* --- Enrollment Controls Section --- */
