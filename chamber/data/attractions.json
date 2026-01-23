@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Passcode Netmask Iteration Leets",
+        "address": "3rd Street Sinkor, Monrovia, Montserrado County",
+        "description": "They provide Excellent Computer Skills traing and Information Technology Services to All.",
+        "image": "images/peniel-logo.png"
+    },
+    {
+        "id": 2,
+        "name": "Smart Brothers Construction Inc.",
+        "address": "SKD Boulevard Road, Monrovia, Montserrado County",
+        "description": "They specialized in infrastructure Building and development. They do maintenance work in general construction, and build bridges & road.",
+        "image": "images/smbc-logo.png"
+    },
+    {
+        "id": 3,
+        "name": "M&N Tech Solutions",
+        "address": "12th Street Sinkor, Monrovia, Montserrado County",
+        "description": "Specialized Tech group that provides IT Consultancy and other tech support. Sells whole sale electronics items and computer accessories.",
+        "image": "images/tech-logo.png"
+    },
+    {
+        "id": 4,
+        "name": "Igbudu Market",
+        "address": "Igbudu, Warri, Delta State",
+        "description": "A vibrant covered marketplace offering fresh produce, colorful textiles, traditional fabrics, and local crafts. Experience authentic Warri commerce in this bustling hub where locals shop for everything from vegetables to beautiful African prints.",
+        "image": "images/attraction-4.webp"
+    },
+    {
+        "id": 5,
+        "name": "International Bank Liberia Limited",
+        "address": "11th & 12th Street Sinkor, Monrovia, Montserrado County",
+        "description": "They provide banking services, and give loans to business owners in Liberia.",
+        "image": "images/fibank-logo2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Liberian Bank for Development and Investment",
+        "address": "9th Street Sinkor, Monrovia, Liberia",
+        "description": "Liberia's only development finance institution.",
+        "image": "images/lbdi-logo.png"
+    },
+    {
+        "id": 7,
+        "name": "The Farmington Hotel Liberia",
+        "address": "Robert International Airport, Harbel, Margibi County",
+        "description": "They provides Luxury accommodation, offers world-class hospitality in Liberia. Features modern conference hall facilities, fine the best dining, and exceptional service for business and travelers.",
+        "image": "images/farmington.png"
+    },
+    {
+        "id": 8,
+        "name": "BMC Group",
+        "address": "Capitol Bye-Pass, Monrovia, Montserrado County",
+        "description": "Provides building construction services. Sells building materials in the height of Monrovia.",
+        "image": "images/bmc.jpg"
+    }
+]

@@ -6,7 +6,7 @@
         "phone": "+231880165653",
         "email": "info@passcodenetmaskiterationleets.com",
         "website": "https://www.passcodenetmaskiterationleets.com",
-        "image": "images/peniel-logo.webp",
+        "image": "images/peniel-logo.png",
         "membershipLevel": 1,
         "industry": "Information Technology",
         "yearJoined": 2020
@@ -25,20 +25,20 @@
     },
     {
         "name": "M&N Tech Solutions",
-        "tagline": "Innovating Tomorrow, Today",
-        "address": "12 Innovation Drive, Warri, Delta State",
-        "phone": "+234 807 890 1234",
-        "email": "hello@deltatechsolutions.ng",
-        "website": "https://www.deltatechsolutions.ng",
-        "image": "images/dtsc-team.webp",
+        "tagline": "Revealing the future Today",
+        "address": "12th Street Sinkor, Monrovia, Montserrado County",
+        "phone": "+231555444888",
+        "email": "info@m&ntech.com",
+        "website": "https://www.m&ntech.com",
+        "image": "images/tech-logo.png",
         "membershipLevel": 2,
         "industry": "Technology",
-        "yearJoined": 2021
+        "yearJoined": 2022
     },
     {
         "name": "International Bank Liberia Limited",
         "tagline": "Trust & Reliability",
-        "address": "12th Street Sinkor, Monrovia, Montserrado County",
+        "address": "11th & 12th Street Sinkor, Monrovia, Montserrado County",
         "phone": "+231777777222",
         "email": "info@ibliberia.com",
         "website": "https://www.ibliberia.com",
@@ -54,7 +54,7 @@
         "phone": "+231888999545",
         "email": "customers.inquiries@lbdi.net",
         "website": "https://www.lbdi.net",
-        "image": "images/ldbi-logo.png",
+        "image": "images/lbdi-logo.png",
         "membershipLevel": 3,
         "industry": "Development Finance Institution",
         "yearJoined": 1988
