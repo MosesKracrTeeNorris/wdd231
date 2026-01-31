@@ -1,0 +1,140 @@
+/* file: styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.wheel {
+    width: 100px;
+    height: 100px;
+    border: 12px solid #ddd; /* Light gray border for the main circle */
+    border-top: 12px solid #3498db; /* Blue border for the 'moving' part */
+    border-radius: 50%; /* Makes the square div a perfect circle */
+    animation: spin 2s linear infinite; /* Applies the animation */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* End at 360 degrees (full circle) rotation */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* The following is an example of an animation for a fade in effect: */
+/* @keyframes fadeIn {
+    0% {
+      opacity: 0;
+}
+100% {
+    opacity: 1;
+  }
+}
+
+/* And, the following example produces a fade color effect that fades from red to yellow: */
+/* @keyframes fadeColor {
+    from {
+        background-color: red;
+}
+to {
+    background-color: yellow;
+ }
+} */
+/* The following applies the fadeIn animation defined above to a box class: */
+/* .box {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+} */ 
+/* And, the next example applies the fadeColor animation: */
+/* .box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    /* using the shorthand animation property */
+    /* animation: fadeColor 2s ease-in-out infinite alternate; */
+/* } */ 
+/* The following is an example that smoothly transitions from a white background to a light blue background over 0.5 seconds when the user hovers over the box: */
+/* .box { */
+    /* width: 200px; */
+    /* height: 200px; */
+    /* background-color: white; */
+    /* border: 1px solid #ccc; */
+    /* transition: background-color 0.5s ease; */
+/* } */
+
+/* .box:hover { */
+    /* background-color: lightblue; */
+/* } */
+/* In the next example, when the user hovers over the box it will grow in width and height after a slight delay with a smooth motion in and out: */
+/* .box { */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* background-color: coral; */
+    /* transition: width 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s; */
+/* }
+.box:hover {
+    width: 150px;
+    height: 150px;
+} */
+/* The following is an example of a transform rule that will rotate the element 15 degrees, move it 20 pixels to the right, and enlarge it to 120% of its original size. */
+/* .box {
+    transform: rotate(15deg) translate(20px) scale(1.2);
+
+}
+#loader {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 1rem rgb(0 0 255 /40%);
+}
+#loader::after {
+    content: '☸️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+
+}
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+@keyframes pulse {
+    0%, 100% {transform: translate(-50%, -50%) scale(1);}
+    50% {transform: translate(-50%, -50%) scale(1.25);}
+}
+.loader-t {
+    transition: spin 1.5s linear infinite;
+
+}
+.loader-t::after {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transformn1.5s ease-in-out;
+    font-size: 2rem;
+}
+.loader-t:hover {
+    transform: rotate(360deg);
+}
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+} */

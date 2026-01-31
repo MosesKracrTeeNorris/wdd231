@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: gainsboro;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 200px; /* Adjust container width as needed */
+    align-items: flex-end; /* Align balls to the bottom of the container */
+    height: 100px; /* Define the height for the bounce area */
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    background-color: #077FFF; /* Blue color for the balls */
+    border-radius: 50%;
+    animation: bounce 0.6s cubic-bezier(0.4, 0.0, 0.6, 1.0) infinite alternate; /* The animation property */
+}
+
+/* Stagger the animation using nth-child selectors */
+.ball:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.ball:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.ball:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0); /* Start position at the bottom */
+    }
+    to {
+        transform: translateY(-70px); /* Move up by 70px */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sprite-animation { */
+  /* width: 100px;  Width of a single frame */
+  /* height: 100px; Height of a single frame */
+  /* background-image: url('spritesheet.png'); */
+  /* background-repeat: no-repeat; */
+  /* animation: play 1s steps(10) infinite; 10 steps for 10 frames */
+/* } */
+
+/* @keyframes play { */
+  /* from { */
+    /* background-position: 0px; Start at the first frame (leftmost) */
+  /* } */
+  /* to { */
+    /* background-position: -1000px; Shift the background by the total width of the spritesheet */
+  /* } */
+/* } */
+
+
+
+
+
+
+
+
+/************************
+/* .ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;  */
+    /* border-radius: 50%; Makes it a circle  */
+    /* position: relative; Required for 'top' and 'left' to work as expected */
+    /* animation-name: bounce;
+    animation-duration: 2s; */
+    /* animation-iteration-count: infinite; Repeats forever */
+    /* animation-timing-function: ease-in-out; Smooths the start/end of each bounce */
+    /* animation-direction: alternate; Plays forward, then backward */
+/* } */
+
+/* @keyframes bounce {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    100% {
+        top: 200px;
+        left: 400px;
+    }
+}  */
