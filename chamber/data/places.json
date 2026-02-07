@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Libassa Ecolodge",
+        "category": "Resort & Wildlife Sanctuary",
+        "address": "Marshall",
+        "tagline": "A sustainable paradise featuring a series of swimming pools, a lazy river, and a wildlife sanctuary for rescued chimpanzees and other animals.",
+        "website": "https://libassa.com/",
+        "image": "images/libassa.webp"
+    },
+    {
+        "name": "Sapo National Park",
+        "category": "National Park",
+        "address": "Sinoe County",
+        "tagline": "Liberia's only national park and a biodiversity hotspot where you can track pygmy hippos and rare primates in primary rainforest.",
+        "website": "https://visitliberia.com/",
+        "image": "images/sapo-forest4.webp"
+    },
+    {
+        "name": "Kpatawee Waterfalls",
+        "category": "Nature & Adventure",
+        "address": "Bong County",
+        "tagline": "A lush, jungle-surrounded waterfall system perfect for hiking, swimming, and picnicking in the heart of Liberia.",
+        "website": "https://enjoyliberia.travel/collections/liberias-top-10/",
+        "image": "images/kpatawee-natural-waterfall.webp"
+    },
+    {
+        "name": "RLJ Kendeja Resort & Villas",
+        "category": "Luxury Resort",
+        "address": "Paynesville",
+        "tagline": "A high-end beachfront resort with a pool and spa, ideal for travelers looking for relaxation and luxury just outside the capital.",
+        "website": "https://www.rljkendejaresort.com/",
+        "image": "images/rlj.webp"
+        
+    },
+    {
+        "name": "Tropicana Beach & Resort",
+        "category": "Beach Club & Fun Area",
+        "tagline": "A popular weekend spot for locals and expats featuring beach access, a pool, and vibrant dining/bar scenes.",
+        "address": "ELWA, Monrovia",
+        "phone": "+231888999545",
+        "email": "customers.inquiries@tropicana.net",
+        "website": "https://www.facebook.com/tropicanalib/",
+        "image": "images/tropicana2.webp"
+    },
+    {
+        "name": "The Farmington Hotel Liberia",
+        "tagline": "Fine Dining and Luxury in Liberia",
+        "address": "Robert International Airport, Harbel, Margibi County",
+        "phone": "+231888888999",
+        "email": "info@thefarmingtonhotel.com",
+        "website": "https://www.thefarmingtonhotel.com",
+        "image": "images/farmington1.webp"
+    },
+    {
+        "name": "The Royal Grand Hotel",
+        "tagline": "Making your stay comfortable and memorable",
+        "address": "15th Street Sinkor, Monrovia, Montserrado County",
+        "phone": "+231555777888",
+        "email": "info@theroyalgrandhotel.com",
+        "website": "https://www.theroyalgrandhotel.com",
+        "image": "images/royalhotel1.webp"
+    },
+    {
+        "name": "Providence Island",
+        "tagline": "The symbolic landing site of freed American slaves in 1822; it is a major cultural landmark currently being developed for tourism.",
+        "address": "Monrovia, Montserrado County",
+        "phone": "+231776915347",
+        "email": "info@providenceisland.lr",
+        "website": "https://enjoyliberia.travel/blog/post/providence-island-the-symbol-of-liberias-founding/",
+        "image": "images/prov-island1.webp",
+        "industry": "Historical Site"
+    },
+    {
+        "name": "Marshall Wetlands & Monkey Island",
+        "tagline": "Take a boat tour through the mangroves to see the chimpanzees of 'Monkey Island,' former research subjects now living in a sanctuary.",
+        "address": "Marshall City, Margibi County",
+        "phone": "+231880676767",
+        "email": "info@liberiachimpanzeerescue.org",
+        "website": "https://liberiachimpanzeerescue.org/",
+        "image": "images/marshallisland2.webp",
+        "industry": "Eco-Tourism"
+    }
+]

@@ -22,10 +22,12 @@
     },
     {
         "id": 4,
-        "name": "Igbudu Market",
-        "address": "Igbudu, Warri, Delta State",
-        "description": "A vibrant covered marketplace offering fresh produce, colorful textiles, traditional fabrics, and local crafts. Experience authentic Warri commerce in this bustling hub where locals shop for everything from vegetables to beautiful African prints.",
-        "image": "images/attraction-4.webp"
+        "name": "The Royal Grand Hotel",
+        "address": "15th Street Sinkor, Monrovia, Montserrado County",
+         "description": "Making your stay comfortable and memorable",
+        "phone": "+231555777888",
+        "email": "info@theroyalgrandhotel.com",
+        "image": "images/royalhotel.jpg"
     },
     {
         "id": 5,
@@ -54,5 +56,14 @@
         "address": "Capitol Bye-Pass, Monrovia, Montserrado County",
         "description": "Provides building construction services. Sells building materials in the height of Monrovia.",
         "image": "images/bmc.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Sethi Brothers Inc.",
+        "address": "Jamaica Road Bushrod Island, Monrovia, Montserrado County",
+        "description": "Quality Building Materials",
+        "phone": "+231776915347",
+        "email": "ashish@sethi-lib.com",
+        "image": "images/sethi.jpg"
     }
 ]

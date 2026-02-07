@@ -1,3 +1,6 @@
+// import {places} from './places.mjs'
+// console.log(places)
+
 // ============================
 // CONSTANTS
 // ============================
@@ -146,11 +149,11 @@ function setActivePage() {
     });
 }
 
-// DIRECTORY VIEW TOGGLE
+// Discover View 
 
 const gridBtn = document.getElementById('gridBtn');
 const listBtn = document.getElementById('listBtn');
-const memberDirectory = document.getElementById('memberDirectory');
+const memberDirectory = document.getElementById('placesDiscover');
 
 if (gridBtn && listBtn && memberDirectory) {
     gridBtn.addEventListener('click', () => {
@@ -170,7 +173,7 @@ if (gridBtn && listBtn && memberDirectory) {
 async function loadMembers() {
     if (!memberDirectory) return;
     try {
-        const response = await fetch('data/members.json');
+        const response = await fetch('data/places.json');
         if (!response.ok) throw new Error('Network response was not ok');
         const members = await response.json();
         displayMembers(members);
@@ -701,3 +704,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // // Call the function to display the members when the script runs
 // displayMembers();
+
+
+
+
+
+// // script.js
+
+// // Function to fetch data and display it
+// async function displayMembers() {
+//     const url = 'members.json'; // Replace with your API endpoint if needed
+//     const memberList = document.getElementById('member-list');
+
+//     try {
+//         // Await the fetch call to get the response object
+//         const response = await fetch(url);
+
+//         // Check if the request was successful
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+
+//         // Await the response.json() call to parse the JSON data
+//         const members = await response.json();
+
+//         // Loop through the members and create HTML elements
+//         members.forEach(member => {
+//             const li = document.createElement('li');
+//             li.innerHTML = `
+//                 <strong>${member.name}</strong>
+//                 <p>Email: ${member.email}</p>
+//                 <p>Level: ${member.membership_level}</p>
+//             `;
+//             memberList.appendChild(li);
+//         });
+
+//     } catch (error) {
+//         // Handle any errors that occurred during the fetch operation
+//         console.error('Error fetching member data:', error);
+//         memberList.innerHTML = '<li>Failed to load member data.</li>';
+//     }
+// }
+
+// // Call the function to display the members when the script runs
+// displayMembers();
+
