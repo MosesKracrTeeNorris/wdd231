@@ -133,12 +133,12 @@ nav a:hover,nav a.active{background-color:var(--color-nav-hover);color:var(--col
 .discover-header h2{font-size:2rem;color:var(--color-primary-dark)}
 
 
-.discover-container{max-width:1200px;margin:2rem auto;padding:0 2rem}
-.discover-header{
+/* .discover-container{max-width:1200px;margin:2rem auto;padding:0 2rem} */
+/* .discover-header{
   display:flex;justify-content:space-between;align-items:center;
   margin-bottom:2rem;padding-bottom:1rem;border-bottom:3px solid var(--color-primary-dark)
-}
-.discover-header h2{font-size:2rem;color:var(--color-primary-dark)}
+} */
+/* .discover-header h2{font-size:2rem;color:var(--color-primary-dark)} */
 
 .view-controls{display:flex;gap:.5rem}
 .view-btn{
@@ -153,9 +153,9 @@ nav a:hover,nav a.active{background-color:var(--color-nav-hover);color:var(--col
   display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem
 }
 
-#placesDiscover.place-grid{
+/* #placesDiscover.place-grid{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem
-}
+} */
 
 .place-card, .info-card, .spotlight-card {
   background-color:var(--color-light-gray);border-radius:10px;
