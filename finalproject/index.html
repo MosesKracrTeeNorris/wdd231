@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" This is the Home page of Passcode Netmask Iteration Leets-PENIEL site. This home page provide brief description of our institution.">
+    <meta name="author" content="Moses Kracar-Tee Norris">
+    <meta property="og:title" content="This is Passcode Netmask Iteration Leets Official Website.">
+    <meta property="og:description" content="PENIEL is an IT service provider institution. Focused on showcasing training, sales of electronic devices and computer accessories, busic computer training skills. Students networking, and hands on industrial training.">
+    <meta property="og:image" content="https://moseskracrteenorris.github.io/wdd231/finalproject/images/peniel-logo.png">
+    <meta property="og:url" content="https://moseskracrteenorris.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+    
+    <title>Passcode Netmask Iteration Leets-PENIEL</title>
+    <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/project.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <!-- <script src="scripts/project.js" defer></script> -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+        <img
+          src="images/peniel-logo.png"
+          alt="Passcode Netmask Logo"
+          class="logo-icon-image"
+        />
+        <span class="logo-text">Passcode Netmask Liberia</span>
+      </div>
+
+      <nav class="desktop-nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+        <!-- <div class="header-container">
+            <div class="logo-section">
+                <img src="images/peniel-logo.png" alt="Passcode Netmask Iteration Leets Logo" class="logo" loading="lazy"> 
+                <div class="logo-text">
+                    <h1>Passcode Netmask Iteration Leets-PENIEL</h1>
+                    <p class="tagline">Connecting Tech Students in Liberia through our training programs</p>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Change theme">
+                    🌓
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div> -->
+    </header>
+
+    <!-- Navigation -->
+    <!-- <nav id="mainNav">
+    
+</nav> -->
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img src="images/team-tech1.webp" alt="Passcode Netmask Students working" class="hero-image">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2>Welcome to Passcode Netmask Iteration Leets-PENIEL</h2>
+                    <p>Connecting and Empowering tech students in Liberia. contact us let build a stronger tech future together in Liberia.</p>
+                    <a href="contact.html" class="btn-primary">Contact Passcode Netmask</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="home-container">
+
+            <!-- Three Column Section: Events | Current Weather | Weather Forecast -->
+            <div class="info-grid">
+                <!-- Events Section -->
+                <section class="info-card events-card">
+                    <h3>Events</h3>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <h4>Student's Networking Semi-Annual Conference</h4>
+                            <p class="event-date">📅 February 28, 2026</p>
+                            <p class="event-time">⏰ 7:00 PM - 10:00 PM</p>
+                            <p class="event-location">🫂🧑‍🤝‍🧑 The Farmington Hotel Conference Hall</p>
+                        </div>
+
+                        <div class="event-item">
+                            <h4>Digital Marketing Workshop</h4>
+                            <p class="event-date">📅 March 4 -6, 2026</p>
+                            <p class="event-time">⏰ 8:00 AM - 1:30 PM</p>
+                            <p class="event-location"> 🏫🧑‍🏫Passcode Netmask Iteration Leets Training Room</p>
+                        </div>
+
+                        <div class="event-item">
+                            <h4>Student Research and Presentations </h4>
+                            <p class="event-date">📅 March 24-27, 2026</p>
+                            <p class="event-time">⏰ 7:00 AM - 6:00 pM</p>
+                            <p class="event-location">📍💐Ellen Johnson Administerial Complex</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Current Weather Section -->
+                <section class="info-card weather-current-card">
+                    <h3>Current Weather</h3>
+                    <div class="current-weather-content">
+                        <div class="weather-main-display">
+                            <div class="weather-icon-wrapper">
+                                <img id="weatherIcon" src="images/weather.png" alt="Weather icon" class="weather-icon-large">
+                            </div>
+                            <div class="weather-info">
+                                <div class="temperature-large" id="currentTemp">--°F</div>
+                                <p class="weather-description-main" id="weatherDescription">Loading...</p>
+                            </div>
+                        </div>
+                        <div class="weather-details-list">
+                            <p><strong>High:</strong> <span id="highTemp">--°F</span></p>
+                            <p><strong>Low:</strong> <span id="lowTemp">--°F</span></p>
+                            <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+                            <p><strong>Sunrise:</strong> <span id="sunrise">--:--</span></p>
+                            <p><strong>Sunset:</strong> <span id="sunset">--:--</span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Weather Forecast Section -->
+                <section class="info-card weather-forecast-card">
+                    <h3>Weather Forecast</h3>
+                    <div class="forecast-list" id="forecastList">
+                        <!-- Forecast will be populated by JavaScript -->
+                    </div>
+                <!-- </section>
+            </div> -->
+
+            <!-- Member Spotlights Section -->
+            <!-- <section class="spotlights-section">
+                <h2 class="spotlights-title">Featured Members</h2>
+                <div class="spotlights-grid" id="spotlightsGrid"> -->
+                    <!-- Spotlights will be populated by JavaScript -->
+                <!-- </div>
+            </section> -->
+        </div>
+        <section class="signature-dishes container">
+        <h2>Enjoy Every Moment of Your Studies at PENIEL</h2>
+        <p class="subtitle">
+          Experience Our Hands on Training Today and become a ManPower Developed.
+        </p>
+
+        <div class="dish-grid">
+          <article class="dish-card">
+            <img
+              src="images/practical.jpg"
+              alt="Practical Application at every step!"
+              loading="lazy"
+            />
+            <h3>Students on Practice</h3>
+            <p>
+              Contact our businesses office today and begin a practical learning in any Computer course of your choice.
+            </p>
+            <a href="course.html" class="btn-secondary">See Details</a>
+          </article>
+          <article class="dish-card">
+            <img
+              src="images/tech-children.jpg"
+              alt="PENIEL Students in Computer Lab"
+              loading="lazy"
+            />
+            <h3>Students In Computer Lab</h3>
+            <p>
+              They are focused in Solving Complex issues.
+            </p>
+            <a href="course.html" class="btn-secondary">See Details</a>
+          </article>
+          <article class="dish-card">
+            <img
+              src="images/electronic1.jpg"
+              alt="Stock devices and accessories"
+              loading="lazy"
+            />
+            <h3>The Best Sales of All Sales are on Now!</h3>
+            <p>
+              Purchase any electronic of our devices and earn 30 percent discount on any course of your choice. 
+            </p>
+            <a href="course.html" class="btn-secondary">See Details</a>
+          </article>
+        </div>
+      </section>
+        <!-- <section>
+            <h3>Enjoy Every Moment of Your Studies at PENIEL</h3>
+            <div class="tech-view">
+                <img src="images/circuit1a.webp" alt="Circuit Board">
+                <img src="images/focus-tech1.webp" alt="Focused AI at PENIEL">
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Passcode Netmask Iteration Leets-PENIEL</h3>
+                <p>🪿3rd Street Sinkor, Monrovia, Montserrado County</p>
+                <p>☎️ <a href="tel:+231880165653">+231880165653</a></p>
+                <p>✉ <a href="mailto:info@passcodenetmaskiterationleets.com">info@passcodenetmaskiterationleets.com</a></p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                        <img src="images/youtube.svg" alt="Subscribe To Our YouTube Channel" width="32" height="32">
+                    </a>
+                    <a href="https://https://www.linkedin.com/in/moses-k-t-norris-a22787139/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="This Is Our LinkedIn Page" width="32" height="32">
+                    </a>
+                    <a href="https://www.facebook.com/moseskracarteenorris" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="images/facebook.svg" alt="Follow Us On Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://github.com/moseskracrteenorris" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="github" width="20" height="20"></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <img src="images/twitter-x.svg" alt="X (Twitter)" width="32" height="32">
+                    </a>
+                </div>
+                <img src="images/peniel-logo.png" alt="PENIEL Logo" width="180" height="120">
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Final Project by:</strong></p>
+                <p>Moses Kracar-Tee Norris</p>
+                <p>&copy; <span id="currentYear"></span> Passcode Netmask Iteration Leets-PENIEL</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
