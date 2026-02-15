@@ -354,9 +354,14 @@
   ======================================================
   */
   footer{
-  background-color:var(--color-primary-dark); 
-  color:var(--color-light-gray);
-  padding:2rem 0 1rem;margin-top:3rem
+  background-color: var(--color-text-primary); 
+  /* color:var(--color-light-gray); */
+  /* padding:2rem 0 1rem;margin-top:3rem */
+  color: var(--color-text-secondary);
+  padding: var(--spacing-md) 0;
+  /* padding: 1.5rem 1rem 0 1rem; */
+  text-align: center;
+  margin-top: auto;
 }
 .footer-container{
   max-width:1200px;margin:auto;padding:0 2rem;
@@ -459,6 +464,7 @@
 .spotlight-header{text-align:center;padding-bottom:1rem;border-bottom:2px solid #E0E0E0}
 .spotlight-name{font-size:1.2rem;color:var(--color-primary-dark);font-weight:700;margin:0 0 .5rem 0}
 .spotlight-tagline{font-size:.9rem;color:var(--color-dark-text);font-weight:600;margin:0} */
+
 /* CURRENT WEATHER AND FORESTCAST CONTENT */
 .spotlight-content{display:grid;grid-template-columns:100px 1fr;gap:1rem;align-items:start}
 .spotlight-image-wrapper{
@@ -497,12 +503,12 @@
 .spotlight-contact a:hover{color:var(--color-nav-hover);text-decoration:underline}
 .spotlight-badge{margin-top:auto} */
 
-  footer {
+  /* footer {
     background-color: var(--color-text-primary);
     border-top: 1px solid var(--color-border);
     padding: var(--spacing-md) 0;
     color: var(--color-text-secondary);
-  }
+  } */
   body.dark-mode footer {
     background-color: var(--dark-color-bg-secondary);
     border-top: 1px solid var(--dark-color-border);

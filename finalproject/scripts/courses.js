@@ -1,66 +1,86 @@
 // Course data array with ITM111 added
 const courses = [
     {
-        subject: 'CSE',
-        number: 110,
-        title: 'Introduction to Programming',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: ['Python'],
+        subject: 'Certificate',
+        number: 100,
+        title: 'Introduction to Computer System',
+        credits: 3,
+        certificate: 'General Computer Skills',
+        description: 'This course will introduce students to Microsoft Windows Operating System, macOS and other Platform. Basic Computer term and browsers. It will introduce the building blocks of navigating through various Operating System, performing basic operation methods and techniques. Finally, students will understand Computer Operation and other important applications.',
+        technology: ['Basic Computer Operation and Management'],
+        image: "images/bcs.jpg",
         completed: true
     },
     {
-        subject: 'WDD',
-        number: 130,
-        title: 'Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actual participation in simple web designs and programming. Students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: ['HTML', 'CSS'],
+        subject: 'Certificate',
+        number: 165,
+        title: 'Basic and Advanced MS Office Training',
+        credits: 3,
+        certificate: 'Office Productivity and Management',
+        description: 'This course introduces students to the management of office operation and tasks. Development a strong career in Office Assistant and Management. The course is hands on with students actual participation in simple document designs and formatting techniques. Students who complete this course will understand the fields of Office Administration and management and will have a good idea if they want to pursue this degree as a major.',
+        technology: ['MS Office Suite', 'Windows OS and macOS'],
         completed: true
     },
     {
-        subject: 'CSE',
-        number: 111,
-        title: 'Programming with Functions',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: ['Python'],
+        subject: 'Certificate',
+        number: 205,
+        title: 'Computer Networking',
+        credits: 3,
+        certificate: 'Computer Network Plus',
+        description: 'Computer Networking students become more organized, efficient, and powerful computer networking specialist by learning to research and network users and devices; assign IP addresses, trouble and diagnose network issues, and test connections; and to handle errors within the network.',
+        technology: ['Packet Tracer', 'OSI Model', 'N+ Training'],
         completed: true
     },
     {
-        subject: 'CSE',
+        subject: 'Diploma',
         number: 210,
-        title: 'Programming with Classes',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: ['C#'],
+        title: 'Computer Engineering',
+        credits: 4,
+        certificate: 'IT Support Specialist',
+        description: 'This course will introduce students to programming, Networking, and Cyber Security. It will present detail demonstration on computer repairs, troubleshooting and diagnosis of Computer System, software installations and maintenance.',
+        technology: ['CompTiA A+', 'Computer Hardware'],
         completed: true
     },
     {
-        subject: 'WDD',
-        number: 131,
-        title: 'Dynamic Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: ['HTML', 'CSS', 'JavaScript'],
+        subject: 'Diploma',
+        number: 235,
+        title: 'Diploma in Computer Science',
+        credits: 4,
+        certificate: 'Diploma in Computer Science',
+        description: 'A technical program focusing on software engineering, database management, and web development.',
+        technology: ['HTML', 'CSS', 'JavaScript', 'Hardware', 'Networking'],
         completed: true
     },
     {
-        subject: 'WDD',
-        number: 231,
-        title: 'Frontend Web Development I',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: ['HTML', 'CSS', 'JavaScript'],
+        subject: 'Higher Diploma',
+        number: 350,
+        title: 'Post Graduate Diploma in Computer Applications',
+        credits: 4,
+        certificate: 'Diploma in Computer Applications',
+        description: 'Designed for graduates seeking specialized knowledge in computer languages and professional applications.',
+        technology: ['HTML', 'CSS', 'JavaScript', 'C#', 'PHP', 'Python'],
         completed: false
     },
-    
+    {
+        subject: 'Higher Diploma',
+        number: 361,
+        title: 'Higher Diploma in Cyber Security',
+        credits: 4,
+        certificate: 'Diploma in Cyber Security',
+        description: 'In-depth training on ethical hacking, network defense, and digital forensics.',
+        technology: ['C++', 'CSS', 'C#', 'PHP', 'Python', 'Networking'],
+        completed: false
+    },
+    {
+        subject: 'Certificate',
+        number: 301,
+        title: 'Google IT Support Professional Certificate',
+        credits: 3,
+        certificate: 'IT Support Professional Certificate',
+        description: 'Comprehensive entry-level training covering networking, OS, and system administration.',
+        technology: ['C++', 'C#', 'PHP', 'Python', 'Networking'],
+        completed: false
+    },
 ];
 
 // Get references to DOM elements
@@ -72,7 +92,7 @@ const body = document.body; // Reference to body for modal
 const filterAll = document.getElementById('filter-all');
 const filterCSE = document.getElementById('filter-cse');
 const filterWDD = document.getElementById('filter-wdd');
-const filterITM = document.getElementById('filter-itm');
+const filterPGDCS = document.getElementById('filter-pgdcs');
 
 
 // --- MODAL CREATION AND LOGIC ---
@@ -152,6 +172,7 @@ function displayCourses(coursesToDisplay) {
         courseCard.setAttribute('data-subject', course.subject);
         courseCard.setAttribute('data-number', String(course.number));
         courseCard.setAttribute('data-credits', String(course.credits));
+        courseCard.setAttribute('data-image', String(course.image));
         courseCard.setAttribute('role', 'button');
         courseCard.setAttribute('tabindex', '0');
 
@@ -188,7 +209,7 @@ function calculateTotalCredits(coursesToDisplay) {
 // Function to set active button
 function setActiveButton(activeButton) {
     // Get all filter buttons in one go
-    const filterButtons = [filterAll, filterCSE, filterWDD, filterITM];
+    const filterButtons = [filterAll, filterCSE, filterWDD, filterPGDCS];
     
     // Remove active class from all buttons
     filterButtons.forEach(btn => btn.classList.remove('active'));
@@ -204,15 +225,20 @@ filterAll.addEventListener('click', () => {
 });
 
 filterCSE.addEventListener('click', () => {
-    const cseCoursesFiltered = courses.filter(course => course.subject === 'CSE');
+    const cseCoursesFiltered = courses.filter(course => course.subject === 'Certificate');
     displayCourses(cseCoursesFiltered);
     setActiveButton(filterCSE);
 });
-
 filterWDD.addEventListener('click', () => {
-    const wddCoursesFiltered = courses.filter(course => course.subject === 'WDD');
+    const wddCoursesFiltered = courses.filter(course => course.subject === 'Diploma');
     displayCourses(wddCoursesFiltered);
     setActiveButton(filterWDD);
+});
+
+filterPGDCS.addEventListener('click', () => {
+    const pgdcsCoursesFiltered = courses.filter(course => course.subject === 'Higher Diploma');
+    displayCourses(pgdcsCoursesFiltered);
+    setActiveButton(filterPGDCS);
 });
 
 

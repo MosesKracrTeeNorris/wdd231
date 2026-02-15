@@ -1,26 +1,52 @@
 /* ========== ROOT VARIABLES ========== */
 :root {
-    --primary-color: #2c3e50;
+--color-accent: #252525; 
+--color-primary: #dd700b; 
+--color-secondary: #7d7d7d; 
+--color-bg-primary: #ffffff;
+--color-light-bg:#CCE5FF; 
+--color-bg-secondary: #cfcfcf; 
+--color-border: #05ad98;
+--color-text-primary: #252525;
+--color-text-secondary: #7d7d7d;
+    /* --primary-color: #2c3e50;
     --secondary-color: #34495e;
     --accent-color: #3498db;
     --accent-compliant-color: #2970a6;
     --completed-color-compliant: #415A77;
-    --completed-color: #fa8d07fb;
+   /* --completed-color: #fa8d07fb;
     --text-light: #ecf0f1;
     --text-dark: #2c3e50;
     --bg-light: #f8f9fa;
     --bg-card: #ffffff;
     --border-color: #bdc3c7;
-    --hover-color: #ffa500;
+    --hover-color: #ffa500; */
 
     /* Centralized accessible color tokens */
     --accent-high-contrast: #003366;
     --accent-high-contrast-hover: #003366;
     --accent-high-contrast-text: #ffffff;
-    --total-credits-color: #0b2b63;
+    --dark-color-text-primary: #f5f5f5; 
+    --dark-color-text-secondary: #bbb; 
+    --dark-color-bg-primary: #121212;
+    --dark-color-bg-secondary: #1e1e1e;
+    --dark-color-border: #333;
+    /* --total-credits-color: #0b2b63;
     --completed-text-color: #ffffff;
-    --focus-outline: rgba(11, 95, 255, 0.24);
-}
+    --focus-outline: rgba(11, 95, 255, 0.24);*/
+
+
+     /* Typography */
+    --font-heading: "Georgia", serif;
+    --font-body: "Arial", sans-serif;
+  
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+} 
 
 /* ========== GLOBAL STYLES ========== */
 * {
@@ -29,25 +55,27 @@
     box-sizing: border-box;
 }
 
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
+    color: var(--color-accent);
+    background-color: var(--color-bg-primary);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
     display: block;
-}
+} */
 
 /* ========== HEADER STYLES ========== */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--color-light-bg);
     color: var(--text-light);
     padding: 1rem;
     display: flex;
@@ -55,7 +83,7 @@ header {
     align-items: center;
 }
 
-.logo-area {
+/* .logo-area {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -70,7 +98,35 @@ header {
 .site-name {
     font-size: 1.2rem;
     font-weight: 700;
-}
+} */
+
+/* 1. CONTAINER: Ensures the icon and text sit side-by-side and are centered vertically. */
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  /* 2. IMAGE ICON: Styles for the actual logo image (icon part). */
+  .logo-icon-image {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+  
+  /* 3. LOGO TEXT: Styles for the 'Peaceful Delight' text. */
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    line-height: 1;
+    transition: color 0.3s;
+    margin: 0;
+    white-space: nowrap;
+  }
 
 /* Hamburger Button */
 #menu-toggle {
@@ -115,15 +171,15 @@ nav a {
     transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
-nav a:hover {
+/* nav a:hover {
     background-color: var(--hover-color);
     padding-left: 2rem;
-}
+} */
 
-nav a.active {
+/* nav a.active {
     background-color: var(--accent-compliant-color);
     font-weight: 700;
-}
+} */
 
 /* ========== MAIN CONTENT ========== */
 main {
@@ -153,7 +209,7 @@ h2 {
 
 /* ========== CARD STYLES ========== */
 .card {
-    background-color: var(--bg-card);
+    /* background-color: var(--bg-card); */
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -208,11 +264,11 @@ h2 {
     transition: all 0.15s ease;
 }
 
-.course-filters button:hover {
-    background-color: var(--accent-high-contrast);
-    color: var(--accent-high-contrast-text);
+/* .course-filters button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg-primary);
     border-color: var(--accent-high-contrast);
-}
+} */
 
 .course-filters button.active {
     background-color: var(--accent-high-contrast);
@@ -259,7 +315,7 @@ button#filter-all.active:focus,
 
 /* Individual Course Cards */
 .course-card {
-    background-color: var(--bg-light);
+    background-color: var(--color-bg-primary);
     border: 2px solid var(--border-color);
     padding: 1rem;
     text-align: center;
@@ -271,7 +327,8 @@ button#filter-all.active:focus,
 
 .course-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px var(--color-primary);/*rgba(0, 0, 0, 0.15); */
+    background-color: #dd700b;
 }
 
 /* Make non-completed course titles use the same blue as the 'All' button */
@@ -283,23 +340,23 @@ button#filter-all.active:focus,
 
 /* Ensure completed cards keep readable title color */
 .course-card.completed h3 {
-    color: var(--completed-text-color);
+    color: var(--color-bg-primary);
 }
 
 /* Completed Course Styling */
-.course-card.completed {
+/* .course-card.completed {
     background-color: var(--completed-color-compliant);
     color: var(--completed-text-color);
     border-color: var(--completed-color-compliant);
-}
+} */
 
 /* Ensure all textual children inside a completed card are also high-contrast */
-.course-card.completed h3,
+/* .course-card.completed h3,
 .course-card.completed p,
 .course-card.completed span,
 .course-card.completed a {
     color: var(--completed-text-color);
-}
+} */
 
 /* Credit Total */
 .credit-total {
@@ -317,24 +374,28 @@ button#filter-all.active:focus,
 }
 
 /* ========== FOOTER STYLES ========== */
-footer {
-    background-color: transparent;
+/* footer{
+    background-color: var(--color-text-primary);
     padding: 1.5rem 1rem 0 1rem;
     text-align: center;
     margin-top: auto;
-}
+} */
+/* .footer-container{
+  max-width:1200px;margin:auto;padding:0 2rem;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem
+} */
 
 /* Social Media Links */
-.social {
+/* .social {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem 0;
-    background-color: transparent;
-}
+    background-color: var(--color-text-primary);
+} */
 
-.social a {
+/* .social a {
     display: inline-block;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -348,16 +409,16 @@ footer {
     width: 32px;
     height: 32px;
     filter: brightness(0) saturate(100%);
-}
+} */
 
 /* Footer text section with dark background */
-footer > p {
+/* footer > p {
     background-color: var(--primary-color);
     color: var(--text-light);
     margin: 0;
     padding: 0.5rem;
     font-size: 0.9rem;
-}
+} */
 
 #lastModified {
     font-size: 0.9rem;
@@ -387,7 +448,7 @@ footer > p {
 }
 
 .modal-content {
-    background-color: var(--bg-card);
+    background-color: var(--color-light-bg);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -462,3 +523,8 @@ footer > p {
     padding: 0;
     line-height: 1.5;
 }
+
+/* ============================================
+===============================================
+ */
+ 

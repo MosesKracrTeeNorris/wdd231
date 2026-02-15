@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://moseskracrteenorris.github.io/wdd231/finalproject/index.html">
     <meta property="og:type" content="website">
     
-    <title>Courses At Passcode Netmask Iteration Leets-PENIEL</title>
+    <title>Passcode Netmask Iteration Leets-PENIEL Course</title>
     <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
     
     <!-- Google Fonts -->
@@ -24,12 +24,14 @@
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/date.js" defer></script>
+    
+    <!-- <script src="scripts/date.js" defer></script> -->
+     <script src="scripts/main.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/courses.js" defer></script>
     
     <!-- JavaScript -->
-    <script src="scripts/main.js" defer></script>
+    <!-- <script src="scripts/main.js" defer></script> -->
     <!-- <script src="scripts/project.js" defer></script> -->
 </head>
 <body>
@@ -41,7 +43,7 @@
           alt="Passcode Netmask Logo"
           class="logo-icon-image"
         />
-        <span class="logo-text">Passcode Netmask Liberia</span>
+        <span class="logo-text">Passcode Netmask Iteration Leets-PENIEL Course</span>
       </div>
 
       <nav class="desktop-nav">
@@ -50,31 +52,34 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="course.html">Courses</a></li>
         <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery of Sales</a></li>
         </ul>
       </nav>
-      
-        <!-- <div class="header-container">
-            <div class="logo-section">
-                <img src="images/peniel-logo.png" alt="Passcode Netmask Iteration Leets Logo" class="logo" loading="lazy"> 
-                <div class="logo-text">
-                    <h1>Passcode Netmask Iteration Leets-PENIEL</h1>
-                    <p class="tagline">Connecting Tech Students in Liberia through our training programs</p>
-                </div>
-            </div>
-            
-            <div class="header-right">
-                <button class="theme-toggle" id="themeToggle" aria-label="Change theme">
-                    🌓
-                </button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div> -->
-    </header>
 
+    </header>
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <i class="fas fa-times close-btn" id="mobile-nav-close"></i>
+      <!-- Mobile theme toggle (so mobile users can switch while menu is open) -->
+      <div class="mobile-nav-controls"
+        style=" 
+          display: flex;
+          justify-content: flex-end;
+          gap: 0.5rem;
+          margin: 0.5rem 1rem;
+        "
+      >
+        <button class="theme-toggle" aria-label="Toggle Light/Dark Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery of Sales</a></li>
+        </ul>
+    </div>
     <!-- Navigation -->
     <!-- <nav id="mainNav">
     
@@ -87,18 +92,19 @@
             <img src="images/practical1.webp" alt="Passcode Netmask Students" class="hero-image">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <h2>Thanks for Reaching Here at Passcode Netmask Iteration Leets-PENIEL</h2>
+                    <h2>Welcome to Our Course Catalog</h2>
                     <p>We Connect, lead, build, and Empower tech students in Liberia. contacting us is the best choice! Join the innovative team let us build a stronger tech future together in Liberia.</p>
                     <a href="about.html" class="btn-primary">Contact Passcode Netmask</a>
                 </div>
             </div>
         </section>
       <section class="card courses-section">
-            <h2>Basic and Advanced Computer Training Programm Certificate Courses</h2>
+            <h2>Basic and Advanced Computer Training Programme both Certificate and Diploma Courses</h2>
             <div class="course-filters">
                 <button id="filter-all" class="active">All Courses</button>
-                <button id="filter-cse">CSE</button>
-                <button id="filter-wdd">WDD</button>
+                <button id="filter-cse">Certificate</button>
+                <button id="filter-wdd">Diploma</button>
+                <button id="filter-pgdcs">Higher Diploma</button>
                 
             </div>
             
@@ -107,8 +113,241 @@
             
             <p class="credit-total">The total credits for courses listed above is: <span id="total-credits">0.</span></p>
         </section>
-             
-       
+            <!-- Course Cost -->
+        <main class="container">
+      <section class="menu-hero-banner">
+        <h1>Full Cost of Our Courses </h1>
+        <p>
+          Experience the best of Tech Learning in Liberia with real hands on interaction. You can
+          optimized for quick viewing on your device as well.
+        </p>
+      </section>
+            <div class="menu-tools-container">
+        <section class="random-dish-section">
+          <h2>Confused? Try Our Professor's Pick!</h2>
+          <button id="random-dish-btn" class="btn-primary large">
+            <i class="fas fa-magic"></i> Surprise Me!
+          </button>
+          <div id="random-dish-result" class="dish-highlight-card">
+            <p>Click the button to see a best course suggestion.</p>
+          </div>
+        </section>
+
+        <section class="qr-scan-section">
+          <h2>Scan for Instant App Access</h2>
+          <p>
+            Use your phone's camera for immediate access to the sales and more
+            features.
+          </p>
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://moseskracrteenorris.github.io/wdd231/finalproject/gallery.html"
+            alt="QR Code for Passcode Netmask Restaurant Digital App"
+            class="qr-code"
+            loading="lazy"
+          />
+        </section>
+      </div>
+
+      <section class="menu-section">
+        <div class="menu-controls">
+          <div class="control-group">
+            <label for="filter-category">Filter by:</label>
+            <select id="filter-category">
+              <option value="all">All Categories</option>
+              <option value="certificate">Our Certificate Courses</option>
+              <option value="diploma">Our Diploma Course</option>
+              <option value="professional">Our Professional Courses</option>
+              <option value="other">Other Higher Associate</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+              <option value="default">Default</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+              <option value="name-asc">Name (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menu-list">
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="350"
+            data-name="Busic Computer Skills"
+          >
+            <img src="images/bcs.jpg" alt="Basic Computer Skills" />
+            <h3>Busic Computer Skills</h3>
+            <p>This enables you to interact with computer applications and OS.</p>
+            <span class="price">$350 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="480"
+            data-name="Microsoft Office Suite"
+          >
+            <img src="images/officesuite.png" alt="Microsoft Office Suite" />
+            <h3>Microsoft Office Suite</h3>
+            <p>
+              This course teaches you from busic to advanced concept of Microsoft Applications.
+            </p>
+            <span class="price">$480 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="550"
+            data-name="Computer Networking"
+          >
+            <img src="images/ccna.png" alt="Computer Networking" />
+            <h3>Computer Networking</h3>
+            <p>Perfectly training skills in Computer Networking and Cisco Certification prep.</p>
+            <span class="price">$550 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="diploma"
+            data-price="650"
+            data-name="Diploma in Computer Science"
+          >
+            <img src="images/dcs2.webp" alt="Diploma in Computer Science" />
+            <h3>Diploma in Computer Science</h3>
+            <p>
+              This course gives you broader knowledge in the field of Computer Sciences.
+            </p>
+            <span class="price">$650 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="diploma"
+            data-price="650"
+            data-name="Computer Engineering"
+          >
+            <img src="images/comptia1.png" alt="Computer Engineering" />
+            <h3>Diploma in Computer Engineering</h3>
+            <p>This course teaches practical hands on, and all you need to know about the CompTiA exam.</p>
+            <span class="price">$650 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="professional"
+            data-price="750"
+            data-name="Post Graduate Diploma in Computer Applications"
+          >
+            <img src="images/cpu1.webp" alt="Post Graduate Diploma in Computer Applications" />
+            <h3>Post Graduate Diploma in Computer Applications</h3>
+            <p>This Post Graduate Diploma in Computer Applications course is an advanced level in the field of Computer Sciences.</p>
+            <span class="price">$750 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="800"
+            data-name="Google IT Support Professional Certificate"
+          >
+            <img src="images/google.png" alt="Google IT Support Professional Certificate" />
+            <h3>Google IT Support Professional Certificate</h3>
+            <p>The Google IT Support Professional Certificate course is a real on the job skills training for IT Support Professionals.</p>
+            <span class="price">$800 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="professional"
+            data-price="850"
+            data-name="Higher Diploma in Cyber Security"
+          >
+            <img src="images/cyber.jpg" alt="Higher Diploma in Cyber Security" />
+            <h3>Higher Diploma in Cyber Security</h3>
+            <p>
+              The Higher Diploma in Cyber Security is an advanced training level course, and it introduces you to CISSP.
+            </p>
+            <span class="price">$850 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="350"
+            data-name="CompTiA Sceurity+ Training"
+          >
+            <img src="images/comptia-s.png" alt="CompTiA Security+ Training" />
+            <h3>CompTiA Security+</h3>
+            <p>
+              The CompTIA Security+ Study CompTIA Security+ is a globally recognized certification that validates the essential skills required for core security functions and a career in IT security. 
+              It covers a wide range of topics, including network security, compliance, threats, vulnerabilities, cryptography, and access control. 
+              The certification is designed to provide a structured path to build competence in the field of cybersecurity, emphasizing hands-on, operational skills.
+            </p>
+            <span class="price">$350 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="300"
+            data-name="Corel Draw Professional Certificate"
+          >
+            <img src="images/corel.webp" alt="Corel Draw Professional Certificate"/>
+            <h3>Corel Draw Professional Graphy Design</h3>
+            <p>
+              This professional course is the heart of graphy designing. Enhanced graphic design skills: Students learn to create logos, 
+              brochures, and other marketing materials with precision and clarity. Artists and illustrators can create detailed illustrations and artwork with CorelDRAW's tools and effects. 
+              CorelDRAW is used for designing multi-page documents such as magazines, newsletters, and books. Photo editing capabilities: While not the primary function, 
+              CorelDRAW includes photo-editing features for basic image adjustments and enhancements.
+            </p>
+            <span class="price">$300 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="300"
+            data-name="Photoshop Profession Certificate"
+          >
+            <img src="images/photoshop.webp" alt="Photoshop Professional Certificate" />
+            <h3>Photoshop Professional Certificate</h3>
+            <p>
+              Photoshop courses typically cover photo editing, graphic design basics, digital painting, and creating visual effects. 
+              Topics include layer management, color correction, typography, and advanced techniques like retouching and compositing.
+              Learning Photoshop can lead to various job opportunities, such as graphic designer, photo editor, digital artist, and marketing specialist. 
+              It enhances your ability to communicate visually and is essential for creative professionals. 
+            </p>
+            <span class="price">$300 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="professional"
+            data-price="750"
+            data-name="Higher Diploma in Data Base Management System"
+          >
+            <img
+              src="images/dbms.webp" alt="Higher Diploma in Data Base Management System"
+            />
+            <h3>Diploma In Database Management System</h3>
+            <p>This course covered a specialized software that acts as an interface between end-users, applications, and the actual data stored on a computer. 
+               It is a system designed to define, create, retrieve, manage, and update data efficiently. It is often described as an "electronic filing cabinet" 
+               that organizes, secures, and maintains data integrity, allowing multiple users to access information simultaneously without conflicts.
+               This course teaches you hands on practice using MongoDB, MySQL, Oracle, and PostgreSQL respectively. 
+            </p>
+            <span class="price">$750 USD or equivalent in Liberian Dollars</span>
+          </div>
+        </div>
+      </section>
+       <div class="hours-group">
+              <h3>Opening Hours</h3>
+              <p>Mon - Wed & Fri: 8:00 AM - 9:00 PM</p>
+              <p>Thur & Sat: 10:00 aM - 9:00 PM</p>
+            </div>
     </main>
 
     <!-- Footer -->

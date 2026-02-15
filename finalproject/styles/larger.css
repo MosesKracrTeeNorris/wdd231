@@ -161,10 +161,10 @@
     }
 
     /* ========== FOOTER - SOCIAL ICONS SEPARATE ========== */
-    footer {
+    /* .footer-container {
         padding: 2rem 2rem 0 2rem;
         background-color: transparent;
-    }
+    } */
 
     /* Completed Course Styling (match small.css for accessibility) */
     .course-card.completed {

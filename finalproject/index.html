@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://moseskracrteenorris.github.io/wdd231/finalproject/index.html">
     <meta property="og:type" content="website">
     
-    <title>Passcode Netmask Iteration Leets-PENIEL</title>
+    <title>About Passcode Netmask Iteration Leets-PENIEL</title>
     <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
     
     <!-- Google Fonts -->
@@ -25,7 +25,8 @@
     
     <!-- JavaScript -->
     <script src="scripts/main.js" defer></script>
-    <!-- <script src="scripts/project.js" defer></script> -->
+    <script src="scripts/project.js" defer></script>
+</head>
 </head>
 <body>
     <!-- Header -->
@@ -36,40 +37,58 @@
           alt="Passcode Netmask Logo"
           class="logo-icon-image"
         />
-        <span class="logo-text">Passcode Netmask Liberia</span>
+        <span class="logo-text">Passcode Netmask Iteration Leets-PENIEL</span>
       </div>
-
+      
       <nav class="desktop-nav">
         <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="course.html">Courses</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery of Sales</a></li>
         </ul>
+        
       </nav>
-      
-        <!-- <div class="header-container">
-            <div class="logo-section">
-                <img src="images/peniel-logo.png" alt="Passcode Netmask Iteration Leets Logo" class="logo" loading="lazy"> 
-                <div class="logo-text">
-                    <h1>Passcode Netmask Iteration Leets-PENIEL</h1>
-                    <p class="tagline">Connecting Tech Students in Liberia through our training programs</p>
-                </div>
-            </div>
-            
-            <div class="header-right">
-                <button class="theme-toggle" id="themeToggle" aria-label="Change theme">
-                    🌓
-                </button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div> -->
-    </header>
+      <div class="header-controls">
+        <button
+          id="mobile-nav-toggle"
+          class="mobile-nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        ></button>
+      </div>
+    </header>
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <i class="fas fa-times close-btn" id="mobile-nav-close"></i>
+      <!-- Mobile theme toggle (so mobile users can switch while menu is open) -->
+      <div class="mobile-nav-controls"
+        style=" 
+          display: flex;
+          justify-content: flex-end;
+          gap: 0.5rem;
+          margin: 0.5rem 1rem;
+        "
+      >
+        <button class="theme-toggle" aria-label="Toggle Light/Dark Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery of Sales</a></li>
+        </ul>
+    </div>
     <!-- Navigation -->
     <!-- <nav id="mainNav">
     
@@ -201,17 +220,17 @@
             <p>
               Purchase any electronic of our devices and earn 30 percent discount on any course of your choice. 
             </p>
-            <a href="course.html" class="btn-secondary">See Details</a>
+            <a href="gallery.html" class="btn-secondary">See Details</a>
           </article>
         </div>
       </section>
-        <!-- <section>
+        <section>
             <h3>Enjoy Every Moment of Your Studies at PENIEL</h3>
             <div class="tech-view">
                 <img src="images/circuit1a.webp" alt="Circuit Board">
                 <img src="images/focus-tech1.webp" alt="Focused AI at PENIEL">
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- Footer -->

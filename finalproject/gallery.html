@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" This is the Home page of Passcode Netmask Iteration Leets-PENIEL site. This home page provide brief description of our institution.">
+    <meta name="author" content="Moses Kracar-Tee Norris">
+    <meta property="og:title" content="This is Passcode Netmask Iteration Leets Official Website.">
+    <meta property="og:description" content="PENIEL is an IT service provider institution. Focused on showcasing training, sales of electronic devices and computer accessories, busic computer training skills. Students networking, and hands on industrial training.">
+    <meta property="og:image" content="https://moseskracrteenorris.github.io/wdd231/finalproject/images/peniel-logo.png">
+    <meta property="og:url" content="https://moseskracrteenorris.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+    
+    <title>Passcode Netmask Iteration Leets-PENIEL Sales Gallery</title>
+    <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- <script src="scripts/date.js" defer></script> -->
+     <script src="scripts/main.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    
+    <!-- JavaScript -->
+    <!-- <script src="scripts/main.js" defer></script> -->
+    <!-- <script src="scripts/project.js" defer></script> -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+        <img
+          src="images/peniel-logo.png"
+          alt="Passcode Netmask Logo"
+          class="logo-icon-image"
+        />
+        <span class="logo-text">Passcode Netmask Iteration Leets-PENIEL Sales Gallery</span>
+      </div>
+
+      <nav class="desktop-nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="gallery.html">Sales Gallery</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <i class="fas fa-times close-btn" id="mobile-nav-close"></i>
+      <!-- Mobile theme toggle (so mobile users can switch while menu is open) -->
+      <div class="mobile-nav-controls"
+        style=" 
+          display: flex;
+          justify-content: flex-end;
+          gap: 0.5rem;
+          margin: 0.5rem 1rem;
+        "
+      >
+        <button class="theme-toggle" aria-label="Toggle Light/Dark Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery of Sales</a></li>
+        </ul>
+    </div>
+
+    <main class="container">
+      <section class="menu-hero-banner">
+        <h1>Welcome to PENIEL Full Sales Gallery of Electronics and Computer Accessories</h1>
+        <p>
+         <strong>Purchase any of these accessories and have a huge discount on any of our courses you wish to enroll.</strong>
+        </p>
+        <p><a href="course.html">Click Here to View The Course Catalog!</a></p>
+      <!-- </section>
+            <div class="menu-tools-container">
+        <section class="random-dish-section">
+          <h2>Confused? Try Our Professor's Pick!</h2>
+          <button id="random-dish-btn" class="btn-primary large">
+            <i class="fas fa-magic"></i> Surprise Me!
+          </button>
+          <div id="random-dish-result" class="dish-highlight-card">
+            <p>Click the button to see a best course suggestion.</p>
+          </div>
+        </section> -->
+
+        <section class="qr-scan-section">
+          <h2>Scan for Instant App Access</h2>
+          <p>
+            Use your phone's camera for immediate access to the course and more
+            features.
+          </p>
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://moseskracrteenorris.github.io/wdd231/finalproject/course.html"
+            alt="QR Code for Passcode Netmask Restaurant Digital App"
+            class="qr-code"
+            loading="lazy"
+          />
+        </section>
+      </div>
+
+      <!-- Sales Gallery -->
+
+        <div class="menu-grid" id="menu-list">
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="70"
+            data-name="Busic Computer Skills"
+          >
+            <img src="images/gallery1.jpg" alt="Sales Gallery" />
+            <h3>Sales Gallery One(1)</h3>
+            <p>Choose the list of sales from these images, and contact us now for quick response.</p>
+            <span class="price">The Price of these accessories range from $20 USD  to $70 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="250"
+            data-name="Microsoft Office Suite"
+          >
+            <img src="images/gallery2.jpg" alt="Slaes Gallery2" />
+            <h3>Sales Gallery Two(2)</h3>
+            <p>
+              Purchase any item from these list of sales from these images and enroll to have a huge tuition fees discount.
+            </p>
+            <span class="price">The price range from $120 USD to $250 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="250"
+            data-name="Computer Networking"
+          >
+            <img src="images/gallery3.jpg" alt="Sales gallery3" />
+            <h3>Sales Gallery Three(3)</h3>
+            <p>As you purchase any of these items, you will have a huge tuition fees discount in our institution.</p>
+            <span class="price">The price range from $160 USD to $250 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="diploma"
+            data-price="180"
+            data-name="Diploma in Computer Science"
+          >
+            <img src="images/gallery4.jpg" alt="Sales gallery4" />
+            <h3>Sales Gallery Four(4)</h3>
+            <p>
+              Purchase any of these items, you will have a huge tuition fees discount in our institution.
+            </p>
+            <span class="price">The price range from $20 USD to $180 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="diploma"
+            data-price="35"
+            data-name="Computer Engineering"
+          >
+            <img src="images/gallery5.jpg" alt="Sales galler5" />
+            <h3>Sales Gallery Five(5)</h3>
+            <p>These are high quality and durable accessories.</p>
+            <span class="price">The price range from $10 USD to $55 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="professional"
+            data-price="400"
+            data-name="Post Graduate Diploma in Computer Applications"
+          >
+            <img src="images/gallery9.jpg" alt="Sales Gallery9" />
+            <h3>Sales Gallery Nine(9)</h3>
+            <p>These are high standard computer and electronic devices. Purchase any of these items to have a huge tuition discount.</p>
+            <span class="price">The price of these devices range from $250 USD to $400 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="40"
+            data-name="Google IT Support Professional Certificate"
+          >
+            <img src="images/gallery8.jpg" alt="Sales gallery8" />
+            <h3>Sales Gallery Eight(8)</h3>
+            <p>Enjoy every moment of sound for these high quality Wireless headphone players.</p>
+            <span class="price">The price of these players range from $20USD to $40 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+          <div
+            class="menu-item"
+            data-category="certificate"
+            data-price="350"
+            data-name="CompTiA Sceurity+ Training"
+          >
+            <img src="images/electronic1.jpg" alt="Sales gallery10" />
+            <h3>Sale Gallery Ten(10)</h3>
+            <p>
+              These are high standard computer and electronic devices. As purchase any of these items you will have a huge tuition discount.
+            </p>
+            <span class="price">The price range from $10 USD  to $350 USD or equivalent in Liberian Dollars</span>
+          </div>
+
+        </div>
+      </section>
+       <div class="hours-group">
+              <h3>Opening Hours</h3>
+              <p>Mon - Wed & Fri: 8:00 AM - 9:00 PM</p>
+              <p>Thur & Sat: 10:00 aM - 9:00 PM</p>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Passcode Netmask Iteration Leets-PENIEL</h3>
+                <p>🪿3rd Street Sinkor, Monrovia, Montserrado County</p>
+                <p>☎️ <a href="tel:+231880165653">+231880165653</a></p>
+                <p>✉ <a href="mailto:info@passcodenetmaskiterationleets.com">info@passcodenetmaskiterationleets.com</a></p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                        <img src="images/youtube.svg" alt="Subscribe To Our YouTube Channel" width="32" height="32">
+                    </a>
+                    <a href="https://https://www.linkedin.com/in/moses-k-t-norris-a22787139/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <img src="images/linkedin.svg" alt="This Is Our LinkedIn Page" width="32" height="32">
+                    </a>
+                    <a href="https://www.facebook.com/moseskracarteenorris" target="_blank" rel="noopener" aria-label="Facebook">
+                        <img src="images/facebook.svg" alt="Follow Us On Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://github.com/moseskracrteenorris" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="github" width="20" height="20"></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <img src="images/twitter-x.svg" alt="X (Twitter)" width="32" height="32">
+                    </a>
+                </div>
+                <img src="images/peniel-logo.png" alt="PENIEL Logo" width="180" height="120">
+            </div>
+
+            <div class="footer-section project-info">
+                <p><strong>WDD 231 Final Project by:</strong></p>
+                <p>Moses Kracar-Tee Norris</p>
+                <p>&copy; <span id="currentYear"></span> Passcode Netmask Iteration Leets-PENIEL</p>
+                <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
