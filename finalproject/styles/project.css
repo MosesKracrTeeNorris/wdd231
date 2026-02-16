@@ -57,7 +57,7 @@
   h2,
   h3 {
     font-family: var(--font-heading);
-    color: var(--color-primary);
+    color: var(--color-bg-primary);
     margin-bottom: var(--spacing-sm);
     line-height: 1.2;
   }

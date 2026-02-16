@@ -192,7 +192,7 @@ main {
 
 h1 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--color-bg-primary);
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid var(--accent-compliant-color);

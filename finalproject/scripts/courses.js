@@ -24,7 +24,7 @@ const courses = [
     {
         subject: 'Certificate',
         number: 205,
-        title: 'Computer Networking',
+        title: 'Computer',
         credits: 3,
         certificate: 'Computer Network Plus',
         description: 'Computer Networking students become more organized, efficient, and powerful computer networking specialist by learning to research and network users and devices; assign IP addresses, trouble and diagnose network issues, and test connections; and to handle errors within the network.',
