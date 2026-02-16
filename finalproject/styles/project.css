@@ -53,10 +53,9 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  h1,
-  h2,
-  h3 {
+  h1 {
     font-family: var(--font-heading);
+    background-color: var(--color-primary);
     color: var(--color-bg-primary);
     margin-bottom: var(--spacing-sm);
     line-height: 1.2;
